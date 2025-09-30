@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastón - Digital Creators</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <h2>Digital Creators</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="bitacora.html">Bitácora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-page">
+        <a href="index.html" class="back-button">← Volver al equipo</a>
+        
+        <div class="profile-header">
+            <img src="img/avatar3.jpg" alt="Gastón" class="profile-avatar">
+            <h1 class="profile-name">Gastón</h1>
+            <p class="profile-location">📍 Corrientes, Argentina</p>
+            <p class="profile-age">29 años</p>
+        </div>
+
+        <div class="profile-content">
+            <section class="content-section">
+                <h3>🎨 Habilidades de Diseño</h3>
+                <button class="interactive-button" onclick="toggleSkills(this)">Mostrar Habilidades</button>
+                <div class="skills-grid" style="display: none; margin-top: 1rem;">
+                    <div class="skill-item">
+                        <strong>Figma</strong>
+                        <p>Prototipado y diseño colaborativo</p>
+                    </div>
+                    <div class="skill-item">
+                        <strong>Adobe Creative Suite</strong>
+                        <p>Photoshop, Illustrator, After Effects</p>
+                    </div>
+                    <div class="skill-item">
+                        <strong>User Research</strong>
+                        <p>Investigación y testing de usuarios</p>
+                    </div>
+                    <div class="skill-item">
+                        <strong>Design Systems</strong>
+                        <p>Creación de componentes escalables</p>
+                    </div>
+                    <div class="skill-item">
+                        <strong>Sketch</strong>
+                        <p>Diseño de interfaces móviles</p>
+                    </div>
+                    <div class="skill-item">
+                        <strong>Principios UX</strong>
+                        <p>Arquitectura de información y usabilidad</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>🎬 Películas Favoritas</h3>
+                <button class="interactive-button" onclick="showFavorites('Películas', this)">Mostrar Películas</button>
+                <ul class="media-list" style="display: none; margin-top: 1rem;">
+                    <li>🌸 <strong>Lost in Translation</strong> - Estética visual minimalista</li>
+                    <li>🎨 <strong>The Grand Budapest Hotel</strong> - Diseño cinematográfico perfecto</li>
+                    <li>🌈 <strong>Inside Out</strong> - Diseño emocional y storytelling</li>
+                    <li>🎭 <strong>Her</strong> - Interfaz y experiencia de usuario futurista</li>
+                    <li>🏛️ <strong>Midnight in Paris</strong> - Inspiración artística y creatividad</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h3>🎵 Música Favorita</h3>
+                <button class="interactive-button" onclick="showFavorites('Música', this)">Mostrar Música</button>
+                <ul class="media-list" style="display: none; margin-top: 1rem;">
+                    <li>🎤 <strong>Lorde - Melodrama</strong> - Pop indie con texturas únicas</li>
+                    <li>🎹 <strong>Thom Yorke - The Eraser</strong> - Electrónica experimental</li>
+                    <li>🎸 <strong>Turnstile - GLOW ON</strong> - Hardcore melódico innovador</li>
+                    <li>🎵 <strong>Oasis - (What's the Story) Morning Glory?</strong> - Britpop clásico</li>
+                    <li>🎧 <strong>The Cranberries - No Need to Argue</strong> - Rock alternativo irlandés</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h3>✨ Sobre mí</h3>
+                <p>Soy diseñador UI/UX con pasión por crear experiencias digitales que conecten emocionalmente con los usuarios. Me especializo en research, prototipado y desarrollo de design systems que faciliten la vida de las personas.</p>
+                <p>Mi inspiración viene del arte, el cine y la música. Creo firmemente que el buen diseño debe ser invisible para el usuario, pero memorable en su experiencia. Siempre busco el equilibrio perfecto entre función y belleza.</p>
+                <button class="interactive-button" onclick="changeTheme(this)">🌈 Cambiar Tema</button>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Digital Creators. Todos los derechos reservados.</p>
+            <p>Gastón - UI/UX Designer</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

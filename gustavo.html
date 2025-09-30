@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo - Digital Creators</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <h2>Digital Creators</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="bitacora.html">Bitácora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-page">
+        <a href="index.html" class="back-button">← Volver al equipo</a>
+        
+        <div class="profile-header">
+            <img src="img/avatar2.jpg" alt="Gustavo" class="profile-avatar">
+            <h1 class="profile-name">Gustavo</h1>
+            <p class="profile-location">📍 Corrientes, Argentina</p>
+            <p class="profile-age">31 años</p>
+        </div>
+
+        <div class="profile-content">
+            <section class="content-section">
+                <h3>⚙️ Habilidades Backend</h3>
+                <button class="interactive-button" onclick="toggleSkills(this)">Mostrar Habilidades</button>
+                <div class="skills-grid" style="display: none; margin-top: 1rem;">
+                    <div class="skill-item">
+                        <strong>Node.js</strong>
+                        <p>Desarrollo de APIs escalables</p>
+                    </div>
+                    <div class="skill-item">
+                        <strong>Python</strong>
+                        <p>Data science y automatización</p>
+                    </div>
+                    <div class="skill-item">
+                        <strong>MongoDB</strong>
+                        <p>Base de datos NoSQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <strong>PostgreSQL</strong>
+                        <p>Base de datos relacionales</p>
+                    </div>
+                    <div class="skill-item">
+                        <strong>Docker</strong>
+                        <p>Containerización y DevOps</p>
+                    </div>
+                    <div class="skill-item">
+                        <strong>AWS</strong>
+                        <p>Cloud computing y microservicios</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>🎬 Películas Favoritas</h3>
+                <button class="interactive-button" onclick="showFavorites('Películas', this)">Mostrar Películas</button>
+                <ul class="media-list" style="display: none; margin-top: 1rem;">
+                    <li>🤖 <strong>Blade Runner 2049</strong> - Ciencia ficción cyberpunk</li>
+                    <li>🧠 <strong>The Matrix</strong> - Filosofía y realidad virtual</li>
+                    <li>🚀 <strong>Arrival</strong> - Comunicación y algoritmos</li>
+                    <li>💻 <strong>Ex Machina</strong> - Inteligencia artificial y ética</li>
+                    <li>🌐 <strong>Ready Player One</strong> - Mundo virtual y tecnología</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h3>🎵 Música Favorita</h3>
+                <button class="interactive-button" onclick="showFavorites('Música', this)">Mostrar Música</button>
+                <ul class="media-list" style="display: none; margin-top: 1rem;">
+                    <li>🎧 <strong>Daft Punk - Random Access Memories</strong> - Electrónica francesa</li>
+                    <li>🎹 <strong>Boards of Canada - Music Has the Right</strong> - IDM y ambient</li>
+                    <li>🎸 <strong>Pink Floyd - Dark Side of the Moon</strong> - Rock progresivo</li>
+                    <li>🎤 <strong>Radiohead - OK Computer</strong> - Art rock alternativo</li>
+                    <li>🎵 <strong>Aphex Twin - Selected Ambient Works</strong> - Música experimental</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h3>🛠️ Sobre mí</h3>
+                <p>Soy un desarrollador backend especializado en arquitecturas escalables y sistemas distribuidos. Me fascina resolver problemas complejos y optimizar el rendimiento de aplicaciones que manejan grandes volúmenes de datos.</p>
+                <p>En mi tiempo libre disfruto explorando nuevas tecnologías emergentes, contribuyendo a proyectos open source, y sumergiéndome en películas de ciencia ficción que me inspiran a pensar en el futuro de la tecnología.</p>
+                <button class="interactive-button" onclick="changeTheme(this)">🔧 Cambiar Tema</button>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Digital Creators. Todos los derechos reservados.</p>
+            <p>Gustavo - Backend Developer</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

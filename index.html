@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo Digital Creators</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <h2>Digital Creators</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="bitacora.html">Bitácora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Digital Creators</h1>
+                <p class="hero-subtitle">Desarrolladores Web Creativos y Apasionados</p>
+                <p class="hero-description">
+                    Somos Gustavo y Gastón, un dúo de estudiantes dedicado al desarrollo web moderno, 
+                    enfocados en crear experiencias digitales innovadoras y funcionales.
+                    Nuestro propósito es combinar creatividad y tecnología para construir 
+                    soluciones web que marquen la diferencia.
+                </p>
+                <button id="welcomeBtn" class="cta-button">
+                    ¡Conoce nuestro dúo!
+                </button>
+            </div>
+            <div class="hero-animation">
+                <div class="floating-card" id="floatingCard">
+                    <div class="card-content">
+                        <h3>🚀 Innovación</h3>
+                        <p>Creatividad digital</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="card-image">
+                        <img src="img/avatar2.jpg" alt="Avatar Gustavo">
+                    </div>
+                    <div class="card-info">
+                        <h3>Gustavo</h3>
+                        <p>Backend Developer</p>
+                        <a href="gustavo.html" class="profile-link">Ver Perfil</a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-image">
+                        <img src="img/avatar3.jpg" alt="Avatar Gastón">
+                    </div>
+                    <div class="card-info">
+                        <h3>Gastón</h3>
+                        <p>UI/UX Designer</p>
+                        <a href="gaston.html" class="profile-link">Ver Perfil</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number" id="projectCounter">0</span>
+                    <span class="stat-label">Proyectos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="experienceCounter">0</span>
+                    <span class="stat-label">Años Experiencia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="clientCounter">0</span>
+                    <span class="stat-label">Clientes Felices</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Digital Creators. Todos los derechos reservados.</p>
+            <p>Proyecto Académico - TP Grupal 1</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

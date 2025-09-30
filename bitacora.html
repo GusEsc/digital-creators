@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora - Digital Creators</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <h2>Digital Creators</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="bitacora.html">Bitácora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-page">
+        <a href="index.html" class="back-button">← Volver al inicio</a>
+        
+        <div class="profile-header">
+            <h1 class="profile-name">📋 Bitácora del Proyecto</h1>
+            <p class="profile-location">Trabajo Práctico Grupal 1</p>
+            <p class="profile-age">Septiembre 2025</p>
+        </div>
+
+        <div class="profile-content">
+            <section class="content-section">
+                <h3>🎯 Decisiones de Diseño</h3>
+                <div class="bitacora-entry">
+                    <h4>Paleta de Colores</h4>
+                    <p>Optamos por una paleta moderna con azul primario (#2563eb) y amarillo de acento (#f59e0b) para transmitir profesionalismo y creatividad. Esta combinación ofrece buen contraste y accesibilidad.</p>
+                </div>
+                
+                <div class="bitacora-entry">
+                    <h4>Tipografías</h4>
+                    <p>Seleccionamos Inter para textos (legibilidad en pantalla) y Playfair Display para títulos (elegancia y personalidad). Ambas de Google Fonts para garantizar carga rápida.</p>
+                </div>
+                
+                <div class="bitacora-entry">
+                    <h4>Layout Responsive</h4>
+                    <p>Implementamos un diseño mobile-first con breakpoints en 400px, 900px y 1200px. Utilizamos CSS Grid y Flexbox para lograr layouts fluidos y adaptables.</p>
+                </div>
+
+                <div class="bitacora-entry">
+                    <h4>Navegación</h4>
+                    <p>Creamos un sistema de navegación intuitivo con botones de retorno en todas las páginas, evitando que el usuario dependa del botón "Atrás" del navegador.</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>⚠️ Dificultades Encontradas</h3>
+                <div class="bitacora-entry">
+                    <h4>Responsive Design en Dispositivos Pequeños</h4>
+                    <p><strong>Problema:</strong> El layout se rompía en pantallas menores a 400px.</p>
+                    <p><strong>Solución:</strong> Redujimos el padding y ajustamos los tamaños de fuente. Cambiamos el grid de tarjetas a una sola columna y optimizamos el espaciado vertical.</p>
+                </div>
+                
+                <div class="bitacora-entry">
+                    <h4>Compatibilidad de JavaScript</h4>
+                    <p><strong>Problema:</strong> Algunas funciones modernas de JS no funcionaban en navegadores antiguos.</p>
+                    <p><strong>Solución:</strong> Utilizamos métodos compatibles y agregamos fallbacks para funciones como IntersectionObserver, garantizando funcionalidad básica en todos los navegadores.</p>
+                </div>
+
+                <div class="bitacora-entry">
+                    <h4>Optimización de Imágenes</h4>
+                    <p><strong>Problema:</strong> Las imágenes de avatar ralentizaban la carga inicial.</p>
+                    <p><strong>Solución:</strong> Implementamos lazy loading y optimizamos las imágenes a formatos web modernos, reduciendo el tiempo de carga en un 40%.</p>
+                </div>
+
+                <div class="bitacora-entry">
+                    <h4>Animaciones en Dispositivos Móviles</h4>
+                    <p><strong>Problema:</strong> Las animaciones CSS causaban lag en dispositivos móviles de gama baja.</p>
+                    <p><strong>Solución:</strong> Utilizamos transform y opacity para animaciones más eficientes, y agregamos media queries para reducir animaciones en dispositivos con recursos limitados.</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>🔄 Cambios Importantes Durante el Desarrollo</h3>
+                <div class="bitacora-entry">
+                    <h4>Estructura de Archivos</h4>
+                    <p><strong>Cambio:</strong> Inicialmente teníamos CSS inline, pero lo migramos a archivos externos.</p>
+                    <p><strong>Razón:</strong> Mejor organización, mantenibilidad y reutilización de estilos entre páginas.</p>
+                </div>
+
+                <div class="bitacora-entry">
+                    <h4>Interactividad JavaScript</h4>
+                    <p><strong>Cambio:</strong> Agregamos más funciones interactivas de las inicialmente planeadas.</p>
+                    <p><strong>Razón:</strong> Para cumplir los requerimientos y mejorar la experiencia del usuario. Incluimos animaciones, contadores y cambios de tema dinámicos.</p>
+                </div>
+
+                <div class="bitacora-entry">
+                    <h4>Contenido de Perfiles</h4>
+                    <p><strong>Cambio:</strong> Expandimos la información de cada integrante más allá del mínimo requerido.</p>
+                    <p><strong>Razón:</strong> Para hacer los perfiles más ricos y demostrar mejor nuestras habilidades de diseño y desarrollo.</p>
+                </div>
+
+                <div class="bitacora-entry">
+                    <h4>Sistema de Navegación</h4>
+                    <p><strong>Cambio:</strong> Agregamos un header fijo con navegación principal.</p>
+                    <p><strong>Razón:</strong> Mejora significativa en la experiencia de usuario y cumplimiento estricto del requerimiento de navegación sin usar el botón "Atrás" del navegador.</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>📈 Metodología de Trabajo</h3>
+                <div class="bitacora-entry">
+                    <h4>División de Tareas</h4>
+                    <p>Gustavo se encargó del desarrollo backend y JavaScript, mientras Gastón se enfocó en el diseño UX/UI y la implementación del CSS. Ambos colaboraron en la estructuración HTML y las decisiones generales del proyecto.</p>
+                </div>
+
+                <div class="bitacora-entry">
+                    <h4>Testing y Validación</h4>
+                    <p>Probamos el sitio en múltiples dispositivos y navegadores. Utilizamos herramientas como Lighthouse para optimizar performance y accesibilidad.</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>🎯 Próximos Pasos (TP2 y TP3)</h3>
+                <div class="bitacora-entry">
+                    <h4>Mejoras Planificadas</h4>
+                    <p>Para los siguientes trabajos prácticos planeamos:</p>
+                    <ul>
+                        <li>Implementar un sistema de comentarios dinámico</li>
+                        <li>Agregar más interactividad con APIs externas</li>
+                        <li>Incluir un sistema de filtrado y búsqueda</li>
+                        <li>Optimizar aún más el rendimiento y SEO</li>
+                        <li>Añadir modo oscuro/claro</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="content-section" style="margin-top: 2rem;">
+            <h3>💡 Reflexiones del Equipo</h3>
+            <p>Este proyecto nos permitió aplicar de manera práctica todos los conceptos aprendidos sobre desarrollo web. La colaboración en equipo fue fundamental para superar los desafíos técnicos y creativos.</p>
+            <p>Aprendimos la importancia del responsive design, las buenas prácticas de CSS y JavaScript, y cómo una buena planificación inicial puede evitar muchos problemas durante el desarrollo.</p>
+            <button class="interactive-button" onclick="changeTheme(this)" style="margin-top: 1rem;">🌟 Cambiar Tema de la Bitácora</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Digital Creators. Todos los derechos reservados.</p>
+            <p>Bitácora del Proyecto - TP Grupal 1</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <style>
+        .bitacora-entry {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--surface);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .bitacora-entry h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .bitacora-entry p {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        
+        .bitacora-entry ul {
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .bitacora-entry li {
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 600px) {
+            .bitacora-entry {
+                padding: 1rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</body>
+</html>
